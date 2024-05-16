@@ -1,0 +1,25 @@
+{
+    "env":{
+        "browser": true,
+        "es2001":true,
+
+    },
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+    "parser":"@typescript-eslint/parser",
+    "parser-option":{
+        "ecmaVersion":"latest",
+        "source-type":"module",
+    },
+    "plugins": ["@typescript-plugin"],
+    "rules":{
+        "no-unused-vars":"error",
+        "no-unused-expressions":"error",
+        "prefer-const":"error",
+        "no-console":"warn",
+        "no-undef":"error"
+
+    },
+    "globals": {
+        "process":"readonly"
+    }
+}
